@@ -25,7 +25,7 @@
     </header>
 <main id="main">
 
-  <img src="images/MCOMMONS-Festifall2025-23.jpg" alt="students at festifall trin to get some connections">
+  <img class = "um_bag_img" src="images/MCOMMONS-Festifall2025-23.jpg" alt="students at festifall trin to get some connections">
   
   <section class="split net">
     <h2>Watch this list of Youtube video about how to networking</h2>
@@ -40,7 +40,7 @@
           How to navigate networking events and leave a lasting impression</a></li>
         </ul>
     
-    <p>
+    <p class="netadv">
       Networking is all about making connections and building relationships. After watching those videos, try reaching out to someone new or joining a group that interests you. Remember, you don’t have to be perfect—just be yourself and stay open to learning from others. Every conversation is a chance to grow your network and learn something new.
     </p>
   </section>
@@ -63,10 +63,40 @@
       </li>
     </ul>
   </section>
+
+  <section class="contact-section">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label>
+          Email:
+          <input type="email" id="email" required placeholder="you@example.com">
+        </label>
+
+        <label>
+          Message:
+          <textarea id="message" rows="4" required placeholder="Write something..."></textarea>
+        </label>
+
+        <button type="submit" id="contact_button">Send</button>
+      </form>
+    </section>
     </main>
     <footer>
-        <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office </a></p>
+        <p>
+           University of Michigan School of Information &copy; <span id="year"></span> | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office</a>
+        </p>
     </footer>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+      const form = document.getElementById('contactForm');
+      const email = document.getElementById('email');
+      const message = document.getElementById('message');
+
+      form.addEventListener('submit', (e) => {
+        alert('Thank you! We will contact you soon.');
+        e.preventDefault();
+        form.reset(); });
+    </script>
     
 </body>
 
