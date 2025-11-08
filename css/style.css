@@ -414,7 +414,7 @@ a:focus-visible {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   nav ul {
     grid-template-columns: repeat(4, 1fr); 
     gap: 1rem;                             
