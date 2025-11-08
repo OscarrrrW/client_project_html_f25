@@ -428,7 +428,7 @@ a:focus-visible {
 
   .intro-content {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* 左右各占一半 */
+    grid-template-columns: 1fr 1fr; 
     align-items: center;
     gap: 1.5rem;
   }
